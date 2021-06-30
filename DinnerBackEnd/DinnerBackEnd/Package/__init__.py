@@ -23,13 +23,9 @@ Folders = dict(
 Constants = dict(
     dateFmt=DateFmt,
     encoding=Encoding,
-    folders=Folders
+    folders=Folders,
+    cfg=configparser.ConfigParser()
 )
-
-# %%
-cooks = configparser.ConfigParser()
-cooks.read(os.path.join(Folders['cook'], 'setting.ini'),
-           encoding=Encoding)
 
 # %%
 
